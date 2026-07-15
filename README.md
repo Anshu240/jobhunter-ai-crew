@@ -4,6 +4,10 @@ A multi-agent job search intelligence system built with the Anthropic SDK and Py
 
 Paste a job description. Get a fit score, tailored resume bullets, company research, and a full interview prep kit in one pipeline run.
 
+ Architecture
+
+![JobHunter AI Crew architecture](docs/architecture.png)
+
 What It Does
 
 JobHunter AI Crew runs a crew of specialized agents, each responsible for a narrowly defined task. Agents hand off structured outputs to the next stage rather than sharing a single context window.
