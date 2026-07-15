@@ -1,0 +1,13 @@
+venv/
+.env
+__pycache__/
+*.pyc
+output/
+.DS_Store
+*.egg-info/
+.pytest_cache/
+profile.yaml
+JS.txt
+*.pdf
+batch_report.html
+company_cache/

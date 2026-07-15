@@ -1,0 +1,982 @@
+frameworks:
+  product_sense:
+    name: Dr. Nancy Li 7-Step Product Case Framework
+    source: '[NL-M5]'
+    use_when: product design / product sense / case interview questions
+    steps:
+    - step: 1
+      name: Comprehend Situation
+      what: Why are we solving this? Link to company mission, current situation, customer empathy.
+    - step: 2
+      name: Identify Customer
+      what: Segment into 3+ non-overlapping groups. Always consider two-sided marketplace.
+    - step: 3
+      name: Cut & Prioritize Customer
+      what: Score by Impact / Size of Market / Urgency. Pick one segment to focus on.
+    - step: 4
+      name: Report Customer Needs & Pain Points
+      what: 1-3 specific pain points per customer. Pain points = what they don't have today.
+    - step: 5
+      name: List Solutions
+      what: Exactly 3 solutions. One sentence each. Google REQUIRES moonshot idea.
+    - step: 6
+      name: Estimate Trade-offs
+      what: Score by Effectiveness / Engineering Effort / Ease of Implementation / Risk. Say one corner case out loud.
+    - step: 7
+      name: Design the MVP
+      what: Draw a wireframe.
+    what_makes_you_stand_out:
+    - Challenge the interviewer's numbers — 'Is 15% really good enough?'
+    - Moonshot ideas — ONLY applicable to Google
+    - Value chain scope — manufacturer, delivery, store, drinker — not just end users
+    - One corner case only — 1% likelihood scenarios
+    typical_mistakes:
+    - Jumping to conclusion right away — you can know the answer, but don't say it immediately
+    - Not linking back to company mission
+    - Narrowing options too quickly
+    - Not providing moonshot (Google only)
+    - Using consultant case framework
+    company_notes:
+      google: MUST include moonshot idea. Moonshot = Huge Problem + Radical Solution + Breakthrough Technology. If not moonshot, can't join Google.
+      facebook: Must link to Facebook mission. Structure and framework are important. They like to hear about FB mission.
+      openai: 30 min interview. Technology-forward, ambitious ideas expected.
+  metrics_mycspchd:
+    name: MYCSPCHD — Product Metrics Framework
+    source: '[NL-M6]'
+    use_when: define success metrics / what metrics would you measure / how do you measure success questions
+    steps:
+      M: Mission — start by linking to company mission
+      Y: Why — why does this product exist / why does this metric matter
+      C: Customer — who are the customers
+      S: Segmentation — segment customers (usually two-sided marketplace)
+      P: Priority — identify North Star metric (one key measurement per user type)
+      H: Health — product health metrics (engagement, active users, technical uptime)
+      C2: Cannibalization — what other products does this impact negatively
+      D: De-risk — counter metrics + user risks (ethical, abuse, misuse)
+    north_star_guidance: Select one from Mission metrics AND one from Product Health metrics. Define 'active' early in the answer.
+    counter_metrics: 'A metric to prevent over-emphasizing the North Star while losing sight of the mission. Example: North Star is MAU, counter metric is feature usage.'
+    what_makes_you_stand_out:
+    - Call out both sides of the marketplace
+    - Define product-unique metrics, not just 'daily active users'
+    - Define 'active' early
+    - Call out counter metrics
+    - Mention cannibalization
+    - Challenge the data they give you
+    - Get ready for the size discussion
+  diagnostic_cpte:
+    name: CPTE — Metric Drop Diagnostic Framework
+    source: '[NL-M6]'
+    use_when: metric dropped / something went wrong / investigate a decline questions
+    steps:
+      C: Customer — customer behavior change, intent change, segment shift
+      P: Product — product change, new feature, bug, A/B test
+      T: Technology — infrastructure failure, third-party dependency, performance issue
+      E: External — competitor launch, seasonality, regulatory change, market shift
+    process:
+    - 1. Define the metric precisely (e.g., define 'daily active user')
+    - 2. Identify the user flow/steps
+    - 3. Apply CPTE at each step — what could go wrong here?
+    - 4. What would you do to fix the most likely cause?
+    - 5. What data would you collect from the data scientist?
+  ai_product_design:
+    name: AI Product Design Framework
+    source: '[NL-W11]'
+    use_when: design/build a specific AI system — fraud detection, recommendation engine, chatbot, ranking system
+    steps:
+    - 1. State assumptions, goals, available data/information/resources (GUCCI)
+    - '2. Define AI input: data pipeline and data type'
+    - 3. Define AI output
+    - 4. Define success metrics
+    - 5. Select AI models (ONLY after steps 1-4 are defined)
+    - 6. Business logic related to the product
+    - 7. AI ethics consideration
+    critical_rule: Only after Input, Output, and metrics are clearly defined — choose your AI models. Never start with model selection.
+    tips:
+    - Confirm assumptions with interviewer before proceeding
+    - Only talk about top 3 challenges — listing all will scare interviewers
+    - Paint a bigger picture — show scale thinking
+    - Use GUCCI for problem definition
+  ai_product_lifecycle:
+    name: AI Product Creation Lifecycle
+    source: '[NL-W11]'
+    use_when: how would you create/build/launch an AI product from scratch questions
+    stages:
+    - Problem Definition (GUCCI)
+    - AI Hypothesis
+    - Data Strategy
+    - AI PoC
+    - Validate Inputs/Outputs with customers
+    - Discover/Validate AI enabler features & AI User Journey
+    - Validated AI features → Product MVP → AI Product-Market Fit
+    - Scale and Generalization strategy
+    - Scale → Dominate Market → Exploit data advantage
+    behavioral_answer_structure:
+      pre_launch: Market research to understand user needs. Set clear KPIs and definition of success aligned across stakeholders. Risk assessment and mitigation. Ethical considerations — bias testing, data
+        privacy.
+      launch: Soft launch with beta testing to gather real-world feedback. Marketing coordination. Smooth rollout, monitoring performance and errors.
+      post_launch: Continuously monitor against KPIs. Gather user feedback. Refine model, expand knowledge base. Open feedback loop with users guides ongoing updates.
+  clarifying_questions:
+    name: Top 10 Clarifying Questions — 4 Groups
+    source: '[NL-M5]'
+    use_when: Opening any product design / sense / case interview question
+    groups:
+      group_1:
+        name: Understand the product
+        use_when: You don't know the product or have no experience using it
+        examples:
+        - Sorry, I don't have much knowledge about Product A — can you tell me more about it?
+        - What is Product A? How does it work?
+      group_2:
+        name: Why questions
+        use_when: After showing customer empathy, explore why this problem is important
+        rule: FIRST show why YOU think this is an important problem — THEN ask the interviewer to confirm
+      group_3:
+        name: Scoping questions
+        use_when: Understand the scope and boundaries of the problem
+        examples:
+        - Is this for all campuses or just headquarters?
+        - Does it include international locations?
+      group_4:
+        name: Challenge the interviewer
+        use_when: If you hear anything bizarre, questionable, or too specific
+        examples:
+        - Why shall we set 15% as the target? Sounds pretty low to me.
+        - Is 15% the industry standard?
+  ab_testing:
+    name: A/B Testing Framework
+    source: '[NL-M6]'
+    use_when: A/B testing / experimentation design questions
+    key_points:
+    - Define Control Group vs Variation Group
+    - Work with data scientist to decide sample size (100-1000)
+    - 'Define significance level: 80%'
+    - State which metric you are optimizing
+    - Run for statistically significant duration
+  behavioral_spar:
+    name: SPAR — Behavioral Interview Framework
+    source: '[NL-M5] + [LL]'
+    use_when: behavioral questions — tell me about a time...
+    structure:
+      S: Situation — set brief context
+      P: Problem — specific challenge or decision
+      A: Action — what YOU specifically did (use I not we)
+      R: Result — measurable outcome
+    rules:
+    - Always use 'I' not 'we' when describing actions
+    - Result must be measurable where possible
+    - Keep S/P brief — spend most time on A and R
+    - For CEO/CTO/Director level — crisp strategic paragraph, NOT full SPAR structure
+  digs_method:
+    name: DIGS Method — Behavioral Framework
+    source: '[LL] Lewis Lin — Decode and Conquer'
+    use_when: behavioral questions, especially conflict/influence/leadership scenarios
+    structure:
+      D: Dilemma — what was the difficult situation or conflict
+      I: Instigator — what caused or triggered the situation
+      G: Growing edge — what skill or growth was required/demonstrated
+      S: Solution — what you did and the result
+ai_pm_metrics:
+  chatbot_and_ai_product:
+    source: '[NL-W11]'
+    categories:
+    - name: User Engagement
+      metrics:
+      - conversation length
+      - session duration
+      - return rate
+      - DAU/WAU/MAU
+    - name: User Satisfaction
+      metrics:
+      - CSAT (1-5 scale)
+      - NPS (0-10 scale)
+      - sentiment score (-1 to +1)
+    - name: Task Completion Rate
+      metrics:
+      - '% conversations where user successfully completes intended task'
+      - Goal Alignment Rate
+    - name: Interaction Quality
+      metrics:
+      - response time (seconds)
+      - accuracy rate
+      - handoff rate
+      - First-Contact Resolution (FCR)
+      - conversation drop-off rate
+    - name: Model Quality
+      metrics:
+      - precision
+      - recall
+      - F1 score
+      - scalability
+      - ROI
+      - speed
+      - data drift rate
+    - name: Product Health
+      metrics:
+      - uptime
+      - error rate
+      - hallucination fallback rate
+      - context maintenance rate
+  ml_model_accuracy:
+    source: '[NL-W11] + [NL-QB]'
+    approach:
+    - Define accuracy by prioritizing BUSINESS metrics, not technical metrics alone
+    - 'Choose metric based on cost of error: high false-positive cost → prioritize precision. High false-negative cost → prioritize recall.'
+    - Monitor and address data drift continuously post-deployment
+    - Leverage new data and deploy pipelines automatically (MLOps)
+    precision_vs_recall: Precision = minimize false positives (fraud detection, financial). Recall = minimize false negatives (medical diagnosis, safety).
+question_bank:
+  ai_specific:
+  - id: AI-001
+    question: Talk about the process of launching your LLM chatbot.
+    category: behavioral_ai
+    likelihood: high
+    source: '[NL-QB] Real interview — behavioral'
+    framework: ai_product_lifecycle
+    maps_to_profile: products_shipped.mytravelwallet
+    answer_structure: pre_launch / launch / post_launch
+    coaching_note: 'Name MyTravelWallet and Zoe specifically. Lead with the architectural decision (deterministic boundary). Include real numbers: 8/10 CSAT, 400+ fixes, 50+ beta subscribers.'
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - What was the biggest technical challenge during the launch?
+    - How did you measure success post-launch?
+    - What would you do differently if you launched it again?
+  - id: AI-002
+    question: What metrics did you measure with your LLM chatbot? Were you able to sustain those metrics over time?
+    category: behavioral_ai
+    likelihood: high
+    source: '[NL-QB] Real interview — behavioral'
+    framework: ai_pm_metrics.chatbot_and_ai_product
+    maps_to_profile: bullets.mytravelwallet.responsibilities
+    answer_structure: engagement → satisfaction (8/10 CSAT) → task completion → interaction quality → model quality
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - How did those metrics change over time?
+    - Which metric surprised you most?
+    - How did you handle when a metric dropped unexpectedly?
+  - id: AI-003
+    question: How do you measure the accuracy of your ML models and how do you improve it?
+    category: behavioral_ai
+    likelihood: high
+    source: '[NL-QB] Real interview — behavioral'
+    framework: ai_pm_metrics.ml_model_accuracy
+    maps_to_profile: bullets.mytravelwallet.achievements[0]
+    answer_structure: align to business metrics → choose precision vs recall based on error cost → monitor data drift → automate pipeline
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - What was your approach when the model's accuracy degraded post-launch?
+    - How did you balance precision vs recall in your product context?
+    - How did you communicate model quality to non-technical stakeholders?
+  - id: AI-004
+    question: For a FinTech company — Build a fraud waste and abuse detection system for payers.
+    category: ai_product_design_case
+    likelihood: likely
+    source: '[NL-QB] Real interview — FinTech company'
+    framework: ai_product_design
+    maps_to_profile: null
+    answer_structure: assumptions (success definition + data access) → AI output (boolean classifier, <5 sec) → AI input (location, transaction history, time, method) → metrics (99.9% precision, recall
+      >10%) → filter layer first → model (Random Forest / Neural Net / XGBoost)
+    time_budget_minutes: 15-20 min
+    anticipated_followups:
+    - What edge cases would your fraud system miss?
+    - How would you handle false positives at scale?
+    - How would you retrain the model as fraud patterns evolve?
+  - id: AI-005
+    question: For an eCommerce company — How can we integrate GenAI technologies in our processes? Provide examples.
+    category: ai_product_design_case
+    likelihood: likely
+    source: '[NL-QB] Real interview — eCommerce company (email + content generation)'
+    framework: ai_product_lifecycle
+    maps_to_profile: products_shipped.mytravelwallet.key_decisions
+    answer_structure: identify use cases (email personalization, content generation, support, churn prediction) → prioritize by impact → define input/output → success metrics → tools available
+    time_budget_minutes: 10-15 min
+    anticipated_followups:
+    - How would you prioritize which GenAI use case to build first?
+    - What's the biggest risk of GenAI in an eCommerce context?
+    - How do you measure ROI on a GenAI integration?
+  - id: AI-006
+    question: For an eCommerce company — How can we be more predictive in identifying customer churn?
+    category: ai_product_design_case
+    likelihood: likely
+    source: '[NL-QB] Real interview — eCommerce company'
+    framework: ai_product_design
+    maps_to_profile: null
+    answer_structure: structured + unstructured data → classical ML (neural net, SVM) for behavioral patterns → GenAI for sentiment/reviews → combine for robust churn model → feedback loop
+    time_budget_minutes: 10-15 min
+    anticipated_followups:
+    - How early can you predict churn before the customer actually churns?
+    - What intervention would you trigger when churn is predicted?
+    - How do you avoid false positives disrupting healthy customers?
+  - id: AI-007
+    question: For a marketplace — Build a ranking algorithm to recommend dishes to customers.
+    category: ai_product_design_case
+    likelihood: likely
+    source: '[NL-QB] Real interview — marketplace org (thought process, not technical skills)'
+    framework: ai_product_design
+    maps_to_profile: null
+    answer_structure: objective (align preferences + sales) → assumptions → success criteria (CTR, conversion, retention) → inputs (customer data, dish data, contextual data) → hybrid approach (collaborative
+      + content-based + contextual bandits) → business logic → ethical considerations
+    time_budget_minutes: 15-20 min
+    anticipated_followups:
+    - How would you handle the cold start problem for new users?
+    - How would you avoid a filter bubble where users only see familiar dishes?
+    - How do you balance vendor goals with user preferences?
+  - id: AI-008
+    question: For a social media company — How would you build a chatbot in-house without using LLMs?
+    category: ai_product_design_case
+    likelihood: possible
+    source: '[NL-QB] Real interview — social media company'
+    framework: ai_product_design
+    maps_to_profile: null
+    answer_structure: define purpose → open-source models → DialogFlow or similar framework → edge computing deployment → model distillation (e.g., Microsoft Phi-3) for cost/performance
+    time_budget_minutes: 10-15 min
+    anticipated_followups:
+    - What are the limitations vs LLM-based chatbots?
+    - When would you choose this approach over an LLM?
+    - How would you handle out-of-scope user queries?
+  - id: AI-009
+    question: How will you ensure trust and safety in our products?
+    category: ai_product_design_case
+    likelihood: likely
+    source: '[NL-QB] Real interview — Snapchat GPM mock'
+    framework: ai_product_design
+    maps_to_profile: bullets.mytravelwallet.responsibilities
+    answer_structure: proactive AI-driven moderation → user privacy protection → user education → robust reporting mechanisms → regular audits and protocol updates
+    time_budget_minutes: 8-12 min
+    anticipated_followups:
+    - How do you balance safety with not over-moderating legitimate content?
+    - How would you measure the effectiveness of your safety system?
+    - What's your approach to trust and safety in a GenAI product specifically?
+  - id: AI-010
+    question: How do you measure or define conversation quality?
+    category: behavioral_ai
+    likelihood: likely
+    source: '[NL-QB] Real interview — Snapchat GPM mock'
+    framework: ai_pm_metrics.chatbot_and_ai_product
+    maps_to_profile: bullets.mytravelwallet.responsibilities
+    answer_structure: user satisfaction (CSAT/NPS/sentiment) → resolution effectiveness (FCR) → engagement and flow (interaction length, drop-off) → task completion → response quality → personalization
+      rate
+    time_budget_minutes: 8-12 min
+    anticipated_followups:
+    - Which single metric would you optimize if you could only pick one?
+    - How do you measure quality for open-ended vs task-specific conversations?
+    - What's the hardest conversation quality problem you've faced?
+  - id: AI-011
+    question: Can you describe your experience designing AI-powered products?
+    category: behavioral_ai
+    likelihood: high
+    source: '[NL-QB]'
+    framework: ai_product_lifecycle
+    maps_to_profile: products_shipped.mytravelwallet
+    answer_structure: name the product → problem it solved → key architectural decision → metrics → outcome
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - What was the hardest AI decision you made during that product?
+    - How did you validate that the AI was actually adding value vs just being a feature?
+  - id: AI-012
+    question: How do you ensure the AI product you're managing is ethically designed and used?
+    category: behavioral_ai
+    likelihood: likely
+    source: '[NL-QB]'
+    framework: ai_product_design
+    maps_to_profile: bullets.mytravelwallet.responsibilities
+    answer_structure: define ethical boundaries upfront → observability at AI/rules boundary → bias testing → user transparency → ongoing monitoring
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - How do you handle it when ethics and business goals are in tension?
+    - What specific bias risks did you design against?
+    - How do you communicate AI risk to non-technical leadership?
+  - id: AI-013
+    question: Explain the data pipeline for the last AI project you worked on. What were the top challenges in getting data, and how did you resolve them?
+    category: behavioral_ai
+    likelihood: high
+    source: '[NL-QB]'
+    framework: null
+    maps_to_profile: products_shipped.mytravelwallet
+    answer_structure: describe the pipeline (SerpAPI + Seats.aero → Supabase vector DB → RAG → Claude API) → challenge (hallucination risk with financial data) → resolution (deterministic math boundary,
+      LLM scoped to natural language only)
+    time_budget_minutes: 5-8 min
+    anticipated_followups:
+    - How did you handle data quality issues?
+    - What would you instrument differently knowing what you know now?
+    - How did the pipeline evolve from PoC to production?
+  - id: AI-014
+    question: How do you prioritize features in a product roadmap when working on AI-driven products?
+    category: behavioral_ai
+    likelihood: high
+    source: '[NL-QB]'
+    framework: behavioral_spar
+    maps_to_profile: story:mtw_agentic_deferral
+    answer_structure: user value → AI feasibility → trust/reliability threshold → data availability → deferral logic (use MTW v2 agentic deferral story)
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - How do you handle when the data contradicts your product intuition?
+    - What was a prioritization decision you made that turned out to be wrong?
+    - How do you communicate de-prioritization to frustrated stakeholders?
+  - id: AI-015
+    question: How do you translate complex AI concepts into tangible benefits for non-technical stakeholders?
+    category: behavioral_ai
+    likelihood: likely
+    source: '[NL-QB]'
+    framework: behavioral_spar
+    maps_to_profile: story:mtw_reliability_fix
+    answer_structure: use problem-solution-outcome structure → avoid jargon → use analogies → tie to business outcomes (savings of $3,600-$8,000 per trip)
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - Give me a specific example of a time that explanation changed a decision.
+    - How do you handle executives who want AI to sound more impressive than it is?
+  - id: AI-016
+    question: What is your approach to risk management in AI product development?
+    category: behavioral_ai
+    likelihood: likely
+    source: '[NL-QB]'
+    framework: ai_product_design
+    maps_to_profile: bullets.mytravelwallet.achievements[0]
+    answer_structure: identify risk classes (hallucination, data privacy, model drift, user trust) → architectural decisions to mitigate → observability to detect → response plan
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - How do you decide when to shut down an AI feature that's underperforming?
+    - What's the most underrated AI risk most PMs miss?
+  general_pm:
+  - id: PM-001
+    question: Tell me about a difficult product decision you made with limited data.
+    category: behavioral
+    likelihood: high
+    source: '[LL] + [GM]'
+    framework: behavioral_spar
+    maps_to_profile: story:mtw_agentic_deferral
+    coaching_note: Use Story 2 (deferring agentic v2). IN-FLIGHT — lead with judgment quality and the decision framework, not the outcome.
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - How would you measure if that decision was actually the right one?
+    - What would you do differently now?
+    - How did you communicate the uncertainty to your team?
+  - id: PM-002
+    question: Tell me about a product you're proud of shipping.
+    category: behavioral
+    likelihood: high
+    source: '[LL] + [GM]'
+    framework: behavioral_spar
+    maps_to_profile: story:mtw_reliability_fix
+    coaching_note: Use Story 1 (MTW deterministic boundary). STRONG. Lead with the problem, the architectural decision, the user satisfaction result.
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - What's the one thing you would have done differently?
+    - How did you handle pushback from engineering on scope?
+    - How did you measure success 6 months after launch?
+  - id: PM-003
+    question: How do you handle disagreement with engineering?
+    category: behavioral
+    likelihood: likely
+    source: '[LL] Decode and Conquer'
+    framework: digs_method
+    maps_to_profile: story:blueprint_sprint_turnaround
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - How did you maintain the relationship after the disagreement?
+    - What would you do if the engineering disagreement was escalating?
+    - When do you defer to engineering judgment vs push back?
+  - id: PM-004
+    question: Tell me about a time you said no to a feature request or stakeholder ask.
+    category: behavioral
+    likelihood: high
+    source: '[LL] + [GM]'
+    framework: behavioral_spar
+    maps_to_profile: story:travelbuzz_scope_discipline
+    coaching_note: Use Story 5 (TravelBuzz scope discipline). PROCESS-DEPTH — lead with the customer research process and the discipline of the decision.
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - How did you communicate the no to the stakeholder?
+    - Was there ever a time you said no and turned out to be wrong?
+    - How do you say no without damaging the relationship?
+  - id: PM-005
+    question: How do you define and measure product success?
+    category: metrics
+    likelihood: high
+    source: '[NL-M6]'
+    framework: metrics_mycspchd
+    maps_to_profile: bullets.mytravelwallet.responsibilities
+    time_budget_minutes: 8-12 min
+    anticipated_followups:
+    - How do you handle metric conflicts between teams?
+    - What's your North Star for this specific product?
+    - How do you define 'active' for this use case?
+  - id: PM-006
+    question: Walk me through how you'd improve [this company's product].
+    category: product_sense
+    likelihood: high
+    source: '[NL-M5]'
+    framework: product_sense
+    maps_to_profile: null
+    coaching_note: Always start with clarifying questions (4 groups). Then use 7-step framework. Link to company mission.
+    time_budget_minutes: 20-25 min
+    anticipated_followups:
+    - Which user segment would you prioritize first?
+    - How would you validate this solution before building it?
+    - What's your moonshot idea for this product?
+  - id: PM-007
+    question: Daily active users dropped 10% month over month. What do you do?
+    category: metrics
+    likelihood: likely
+    source: '[NL-M6]'
+    framework: diagnostic_cpte
+    maps_to_profile: null
+    time_budget_minutes: 8-12 min
+    anticipated_followups:
+    - How would you validate which hypothesis is correct?
+    - What data would you ask your data scientist for first?
+    - How do you communicate this investigation to leadership while it's ongoing?
+  - id: PM-008
+    question: How do you prioritize your product roadmap?
+    category: behavioral
+    likelihood: high
+    source: '[GM] Cracking the PM Interview'
+    framework: behavioral_spar
+    maps_to_profile: story:travelbuzz_scope_discipline
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - How do you handle when leadership changes priorities mid-sprint?
+    - What's the hardest prioritization tradeoff you've made?
+    - How do you handle technical debt vs feature work prioritization?
+  - id: PM-009
+    question: Tell me about a time you used customer feedback to change product direction.
+    category: behavioral
+    likelihood: high
+    source: '[NL-M5] + [GM]'
+    framework: behavioral_spar
+    maps_to_profile: story:mtw_feedback_loop
+    coaching_note: Use Story 6 (MTW feedback-to-ship loop). STRONG. 400+ fixes, 50+ beta subscribers, organic growth.
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - How do you make sure customer feedback doesn't create a squeaky wheel problem?
+    - How did you validate that one customer's feedback represented a broader need?
+    - What did you do when feedback from customers contradicted each other?
+  - id: PM-010
+    question: Tell me about a failure and what you learned from it.
+    category: behavioral
+    likelihood: likely
+    source: '[GM] Cracking the PM Interview'
+    framework: behavioral_spar
+    maps_to_profile: story:mtw_agentic_deferral
+    coaching_note: 'Use Story 2 (deferring agentic v2) framed as: ''The failure was over-promising on v2 timeline. Here''s what I learned about scope discipline.'''
+    time_budget_minutes: 3-5 min
+    anticipated_followups:
+    - How did the failure change how you work?
+    - How did you communicate the failure to leadership?
+    - What early signals did you miss that you would catch now?
+  - id: PM-011
+    question: Why do you want to be a PM?
+    category: behavioral
+    likelihood: likely
+    source: '[GM] Cracking the PM Interview'
+    framework: null
+    maps_to_profile: identity
+    coaching_note: 'Connect to your builder identity. You ship things: MyTravelWallet is live. You came from BA/QA/engineering-adjacent background — you gravitated toward defining what to build, not just
+      testing it.'
+    time_budget_minutes: 2-3 min
+    anticipated_followups:
+    - How has your idea of what a PM does changed since you started?
+    - Where do you want to be as a PM in 3 years?
+  - id: PM-012
+    question: What's your favorite product and why?
+    category: product_sense
+    likelihood: likely
+    source: '[LL] Decode and Conquer'
+    framework: product_sense
+    maps_to_profile: null
+    coaching_note: 'Evaluate using a framework: innovative, useful, honest (Lewis Lin''s 3 principles). Pick a product you genuinely use and can speak to technically.'
+    time_budget_minutes: 5-8 min
+    anticipated_followups:
+    - What would you improve about it?
+    - Who do you think their main competitor is and why?
+    - How would you measure success for this product?
+  real_interviews: null
+executive_questions:
+  director:
+  - question: What would your first 90 days look like in this role?
+    answer_structure: Listen 30 days → Validate 30 days → Commit 30 days. Name 2-3 specific priorities from company brief.
+    coaching_note: Crisp and specific. Reference actual company signals from Company Researcher brief. Show you've done real homework.
+  - question: How do you think about building an AI product roadmap?
+    answer_structure: User value validation → AI feasibility gate → trust/reliability threshold → data availability → staged rollout
+    coaching_note: Reference your MTW experience building a real AI roadmap. Show you think in validated stages, not just features.
+  - question: Where do you see AI taking this industry in the next 2-3 years?
+    answer_structure: Current state → key inflection points → where this company is positioned → what it means for the PM role
+    coaching_note: Show conviction. Specific predictions, not vague 'AI will transform everything.' Ground in real signals from company brief.
+  - question: How do you handle pushback from senior stakeholders?
+    answer_structure: Use SPAR — situation, data-driven decision, how you influenced, result
+    maps_to_profile: story:mtw_agentic_deferral
+  - question: What's your approach to cross-functional alignment on AI products?
+    answer_structure: Show the PRD + user stories with acceptance criteria approach. Reference MTW cross-functional collaboration.
+    maps_to_profile: bullets.mytravelwallet.responsibilities
+  vp_cpo:
+  - question: How do you think about scaling a PM function or team?
+    answer_structure: Hiring signal → process codification → autonomy with alignment → metrics for PM performance
+    coaching_note: 'Be honest: no people management experience. Bridge to: led cross-functional team of 15-20 at Blueprint, team of 5 PMs + 2 designers + 6 engineers at MTW fellowship.'
+  - question: What's your framework for build vs. buy vs. partner decisions on AI capabilities?
+    answer_structure: Core differentiator test → data advantage → cost/speed → vendor lock-in risk
+    coaching_note: Reference MTW decision to use Claude API vs. build own LLM. Conscious architectural choice.
+  - question: How do you balance innovation with execution quality in AI products?
+    answer_structure: Show the v1/v2 discipline at MTW — ship v1 clean, instrument, validate, then build v2
+    maps_to_profile: story:mtw_agentic_deferral
+  ceo:
+  - question: Why you over someone with 8+ years of PM experience?
+    answer_structure: One crisp paragraph. Lead with shipped production AI product. End with conviction about the space.
+    coaching_note: 'NEVER defensive. Confident framing: ''I ship AI products that work in production, not just prototypes.'' MTW evidence. In 2026, that''s rarer than years of title.'
+  - question: What's your conviction about where this space is going?
+    answer_structure: Specific prediction → evidence for it → what it means for this company → why you're excited
+    coaching_note: Show genuine conviction. One or two specific bets, not a survey of all AI trends. Be willing to be wrong.
+  - question: Why do you want this role specifically at this company?
+    answer_structure: Something specific from company brief (AI signal, product direction, mission) + how it connects to your work
+    coaching_note: Company brief is required for this question. Generic answer is a red flag at CEO level. Must reference specific company intelligence.
+  - question: What would you do if the AI strategy you recommended didn't work?
+    answer_structure: Define 'didn't work' → early signals → pivot vs. persevere framework → what you'd do differently
+    coaching_note: Show maturity. The answer isn't 'I'd be right' — it's 'here's how I'd know early and what I'd do.'
+story_registry:
+  story:mtw_reliability_fix:
+    title_match: Eliminating an AI Reliability Failure Class at MyTravelWallet
+    profile_section: hero_stories
+  story:mtw_agentic_deferral:
+    title_match: Deferring Agentic v2 at MyTravelWallet
+    profile_section: hero_stories
+  story:blueprint_enterprise_deals:
+    title_match: Securing 3 Enterprise B2B Deals at Blueprint
+    profile_section: hero_stories
+  story:blueprint_sprint_turnaround:
+    title_match: Sprint Delivery Turnaround at Blueprint
+    profile_section: hero_stories
+  story:travelbuzz_scope_discipline:
+    title_match: Customer-Driven Scope Discipline at TravelBuzz
+    profile_section: hero_stories
+  story:mtw_feedback_loop:
+    title_match: Building a Feedback-to-Ship Loop at MyTravelWallet
+    profile_section: hero_stories
+story_mappings:
+  story:mtw_reliability_fix:
+    title: Eliminating AI Reliability Failure Class at MyTravelWallet
+    strength: STRONG
+    best_for:
+    - AI architectural decisions
+    - LLM boundary design and trust-sensitive product thinking
+    - Tell me about an AI product you're proud of
+    - How do you ensure AI product reliability?
+    - How do you make difficult technical decisions?
+    - Tell me about a time you solved a hard engineering/product problem
+    key_numbers:
+    - 8/10 user satisfaction
+    - eliminates class of hallucination failures
+    jd_vocabulary_to_mirror:
+    - agentic
+    - LLM
+    - reliability
+    - guardrails
+    - trust
+  story:mtw_agentic_deferral:
+    title: Deferring Agentic v2 at MyTravelWallet (IN-FLIGHT)
+    strength: IN-FLIGHT
+    best_for:
+    - Saying no / scope discipline under team pressure
+    - Data-driven decision making
+    - PM judgment
+    - Difficult product decision with limited data
+    - Prioritization tradeoffs
+    honest_framing: Decision still in flight — lead with judgment quality, decision framework, and what's been proven so far. Do NOT frame as completed win.
+    key_numbers:
+    - v1 shipped cleanly
+    - v2 architecture documented and ready
+  story:blueprint_enterprise_deals:
+    title: Securing 3 Enterprise B2B Deals at Blueprint
+    strength: STRONG
+    best_for:
+    - Enterprise B2B product strategy
+    - Cross-functional leadership with C-suite
+    - Product impact on revenue
+    - Tell me about a product that drove business results
+    - How have you worked with sales/enterprise customers?
+    key_numbers:
+    - 3 enterprise deals in 7 months
+    - 5+ pipeline opportunities
+    - Infosys
+    - Automation Anywhere
+  story:blueprint_sprint_turnaround:
+    title: Sprint Delivery Turnaround at Blueprint
+    strength: STRONG
+    best_for:
+    - Operational PM / Agile delivery
+    - Process improvement
+    - Working with engineering teams
+    - How do you improve team delivery?
+    - Tell me about improving an inefficient process
+    key_numbers:
+    - 85% on-time delivery
+    - 30% reduction in mid-sprint scope changes
+    - 2 consecutive quarters
+  story:travelbuzz_scope_discipline:
+    title: Customer-Driven Scope Discipline at TravelBuzz (PROCESS-DEPTH)
+    strength: PROCESS-DEPTH
+    best_for:
+    - Voice of Customer research
+    - Saying no based on customer data
+    - Feature prioritization and scope discipline
+    - How do you do customer discovery?
+    honest_framing: Process-strong, outcome-light. Use for discovery/research/saying-no questions, NOT for impact/outcome questions.
+    key_numbers:
+    - 15 parent interviews
+    - 35% cited mid-trip entertainment
+    - 60% wanted packing reminders
+  story:mtw_feedback_loop:
+    title: Building Feedback-to-Ship Loop at MyTravelWallet
+    strength: STRONG
+    best_for:
+    - Beta program operations
+    - Voice of Customer at production scale
+    - Continuous improvement loops
+    - Building user trust through iteration
+    - Tell me about building a feedback loop
+    key_numbers:
+    - 400+ fixes shipped
+    - 50+ beta subscribers
+    - organic referral growth
+technical_concepts:
+  rag_pipeline:
+    what_it_is: Retrieval-Augmented Generation — LLM combined with a retrieval system (vector database) to ground responses in real data, reducing hallucination
+    your_experience: products_shipped.mytravelwallet
+    gap_type: none
+    your_answer: 'Built production RAG pipeline at MyTravelWallet. Loyalty program data embedded in Supabase vector DB. Query retrieves relevant reward program info, passes to Claude as context for natural
+      language explanation. Key architectural decision: scoped LLM to explanation only, kept all financial calculations deterministic.'
+    key_points:
+    - Embedding model converts documents to vectors stored in vector DB
+    - Query retrieves relevant chunks, passes to LLM as grounded context
+    - Reduces hallucination by anchoring LLM output to retrieved facts
+  hallucination_guardrails:
+    what_it_is: Mechanisms to detect and prevent AI models from generating false or unsupported information
+    your_experience: bullets.mytravelwallet.achievements[0]
+    gap_type: none
+    your_answer: 'Designed three-layer AI observability at MyTravelWallet: (1) input integrity monitoring, (2) LLM output evaluation, (3) post-decision quality monitoring. Core architectural decision: LLM
+      scoped strictly to natural language explanation — all financial calculations run deterministically. Placed observability instrumentation at the AI/rules boundary.'
+  agentic_ai:
+    what_it_is: AI systems that can take multi-step actions autonomously — tool calling, memory management, planning, and execution toward a goal
+    your_experience: bullets.mytravelwallet.responsibilities[5]
+    gap_type: none
+    your_answer: Scoped v2 agentic layer for Zoe at MyTravelWallet. Defined tool-calling interfaces, memory management boundaries, output validation checkpoints, and execution isolation requirements. Deliberately
+      deferred build until v1 user data validated trigger patterns.
+  prompt_engineering:
+    what_it_is: Systematic design of prompts to reliably elicit desired LLM behavior — system prompts, few-shot examples, chain-of-thought, structured output
+    your_experience: products_shipped.mytravelwallet
+    gap_type: none
+    your_answer: Used throughout MyTravelWallet — system prompts for Zoe's conversational behavior, structured output prompts for verdict generation, hallucination prevention constraints in prompt design.
+  vector_database:
+    what_it_is: Database optimized for storing and querying high-dimensional vectors (embeddings) — enables semantic similarity search
+    your_experience: products_shipped.mytravelwallet.stack
+    gap_type: none
+    your_answer: Used Supabase with pgvector extension as vector store in MyTravelWallet RAG pipeline.
+  llm_evaluation:
+    what_it_is: Methods to assess LLM output quality — faithfulness, answer relevance, context precision, context recall, toxicity, latency
+    your_experience: bullets.mytravelwallet.responsibilities
+    gap_type: soft_gap
+    concept: 'Key evaluation dimensions: faithfulness (does output match source?), answer relevance (does it answer the question?), context precision (is retrieved context relevant?), context recall (is
+      enough context retrieved?)'
+    bridge_answer: Built AI observability instrumentation at MyTravelWallet monitoring verdict outcomes, hallucination fallback rates, and user trust signals. Designed three-layer quality monitoring. Adjacent
+      to formal LLM eval frameworks like RAGAS. No direct experience with evaluation libraries.
+  data_drift:
+    what_it_is: Change in statistical properties of model inputs over time, causing model performance to degrade — covariate drift, label drift, concept drift
+    your_experience: null
+    gap_type: soft_gap
+    concept: Monitor input distributions post-deployment. Compare to training data distributions. Retrain or fine-tune when significant drift detected. MLOps pipelines automate detection.
+    bridge_answer: Designed AI observability at MyTravelWallet to monitor verdict outcome distributions over time — same underlying principle as data drift monitoring. No hands-on experience with formal
+      drift detection tooling.
+  fine_tuning:
+    what_it_is: Training a pre-trained model on domain-specific labeled data to improve performance for a specific use case — full fine-tuning vs PEFT (LoRA, QLoRA)
+    your_experience: null
+    gap_type: soft_gap
+    concept: 'Full fine-tuning updates all model weights. PEFT (LoRA) updates small adapter layers — cheaper, less catastrophic forgetting. Requires labeled training data. Trade-off: performance vs cost
+      vs maintenance burden.'
+    bridge_answer: 'Made a deliberate architectural decision at MyTravelWallet to use RAG + prompt engineering instead of fine-tuning — lower complexity, lower cost, easier to update. Understand the trade-off:
+      fine-tuning for stable domain knowledge, RAG for dynamic/fresh data.'
+  mlops:
+    what_it_is: Practices for deploying and maintaining ML models in production — CI/CD for ML, automated training pipelines, model versioning, monitoring, rollback
+    your_experience: null
+    gap_type: soft_gap
+    concept: 'Key components: data pipeline automation, model training automation, model registry, deployment pipelines, monitoring dashboards, alerting on drift/degradation'
+    bridge_answer: Managed AI product lifecycle at MyTravelWallet from PoC to production — understand what MLOps solves from a PM perspective. No hands-on experience with MLOps tooling (Kubeflow, MLflow,
+      SageMaker Pipelines). Gap acknowledged.
+  aws_sagemaker:
+    what_it_is: AWS managed ML platform — SageMaker Studio (IDE), Training Jobs, Endpoints (real-time inference), Model Monitor (drift detection), Pipelines (MLOps automation)
+    your_experience: null
+    gap_type: hard_gap
+    concept: End-to-end ML lifecycle on AWS. Training → registry → deployment → monitoring. Integrates with S3 for data, CloudWatch for monitoring, IAM for permissions.
+    bridge_answer: 'Hard gap — no direct SageMaker experience. Lead with production AI experience: Claude API + FastAPI + Supabase + Vercel stack in production. Acknowledge the gap directly and honestly.
+      Note: understand the principles behind managed ML platforms — the ''what'' and ''why'', not the ''how'' hands-on.'
+  aws_bedrock:
+    what_it_is: AWS managed service for foundation models — access Claude, Llama, Titan via API without managing infrastructure. Supports RAG via Knowledge Bases, agents via Agents for Bedrock.
+    your_experience: null
+    gap_type: hard_gap
+    concept: Fully managed foundation model API. Knowledge Bases for RAG. Agents for multi-step workflows. Model evaluation built in.
+    bridge_answer: Hard gap — no direct Bedrock experience. Lead with Claude API experience (direct Anthropic API, not via AWS). Architecture patterns are equivalent — same RAG and agentic concepts. Gap
+      is tooling-specific, not conceptual.
+  transformer_architecture:
+    what_it_is: Neural network architecture underlying most modern LLMs — attention mechanism, self-attention, encoder-decoder structure
+    your_experience: null
+    gap_type: soft_gap
+    concept: 'Attention mechanism: each token attends to all other tokens. Self-attention: model learns which tokens are relevant to each other. Transformer = multiple attention layers + feed-forward layers.'
+    bridge_answer: 'Conceptual understanding from building LLM-powered products. No hands-on model architecture experience. PM-level knowledge: understand what transformers enable (long-range dependencies,
+      parallel training) and their limitations (context window, compute cost, latency).'
+company_calibration:
+  google:
+    rules:
+    - Product design answers MUST include a moonshot idea
+    - Moonshot = Huge Problem (millions/billions impacted) + Radical Solution + Breakthrough Technology
+    - Engineering-driven culture — PM must inspire best engineers
+    - If not moonshot-worthy, engineers won't staff the product
+    technical_prep:
+    - How does a browser work?
+    - How to reduce energy consumption of a YouTube app?
+    - If the data center shuts down, what do you do?
+    interview_structure: 'Generalist vs Specialist track. Multiple rounds: hiring manager background + small case → onsite case + analytical + behavioral + technical.'
+  facebook_meta:
+    rules:
+    - 'Must link product answers to Meta mission: ''bring the world closer together'''
+    - Follow structure and framework strictly
+    - Two-sided marketplace thinking expected for almost all products
+    - Counter metrics and cannibalization must be called out
+    interview_structure: 'Round 1: product sense + product metrics case. Round 2: same + leadership questions.'
+  openai:
+    rules:
+    - 30-minute case interview format (shorter than standard)
+    - Technology-forward, ambitious ideas expected
+    - AI safety and ethics considerations are valued and expected
+    - Questions like 'use technology to transcribe animal thoughts into English' — think big
+  stripe:
+    rules:
+    - Developer-focused product thinking — understand API design
+    - Strong emphasis on technical depth and clear written communication (writing culture)
+    - High bar for precision and clarity
+  startups_general:
+    rules:
+    - 0-to-1 thinking valued — show you can build from scratch (you have this)
+    - Velocity and pragmatism over process
+    - Broader PM scope — often own more than at FAANG
+    - Show you've shipped a real product (MyTravelWallet)
+    - Equity and growth trajectory context matters for fit
+  ai_native_companies:
+    rules:
+    - Deep AI knowledge expected — not surface level
+    - Show you've made real AI architectural decisions
+    - Speak to observability, reliability, hallucination — not just features
+    - Company Researcher AI signal classification is critical input for prep
+question_category_time_budgets:
+  behavioral:
+    min_minutes: 2
+    max_minutes: 4
+    label: 2-4 min
+  behavioral_ai:
+    min_minutes: 3
+    max_minutes: 5
+    label: 3-5 min
+  product_sense:
+    min_minutes: 20
+    max_minutes: 25
+    label: 20-25 min
+  metrics:
+    min_minutes: 8
+    max_minutes: 12
+    label: 8-12 min
+  technical:
+    min_minutes: 3
+    max_minutes: 8
+    label: 3-8 min
+  executive:
+    min_minutes: 2
+    max_minutes: 4
+    label: 2-4 min (crisp)
+  company_specific:
+    min_minutes: 2
+    max_minutes: 5
+    label: 2-5 min
+crewai_portfolio_questions:
+  _note: Questions specifically about JobHunter AI Crew — anticipated once you showcase this on your portfolio and in interviews.
+  architecture_questions:
+  - question: Walk me through the architecture of your multi-agent system.
+    category: technical_portfolio
+    likelihood: high
+    time_budget_minutes: 5-8 min
+    answer_structure: 7 agents, each with a single responsibility. Job Analyst parses JDs → Profile Builder builds candidate profile → Fit Scorer weights match → Presenter renders the HTML report → Resume
+      Strategist produces targeted rewrites → Company Researcher searches 5 platforms → Interview Prep Coach maps questions to real stories. Orchestrator ties them together. Each agent has a behavioral
+      spec before any code was written.
+    anticipated_followups:
+    - How do agents communicate with each other?
+    - What happens when one agent fails mid-pipeline?
+    - Why 7 agents vs fewer with broader scope?
+  - question: Why did you choose CrewAI vs building with the raw Anthropic SDK directly?
+    category: technical_portfolio
+    likelihood: high
+    time_budget_minutes: 3-5 min
+    answer_structure: 'Honest answer: v1 actually uses the raw Anthropic SDK with messages.parse for structured output, NOT CrewAI orchestration. The architecture decision: CrewAI adds orchestration patterns
+      on top of the SDK, which is valuable for agent-to-agent communication and state management at scale. For v1, each agent is a standalone Python module with clean input/output contracts — the orchestrator
+      (run_pipeline.py) handles sequencing. CrewAI becomes more valuable when agents need to spawn sub-agents or when the communication graph gets complex.'
+    anticipated_followups:
+    - What would make you switch to a fully CrewAI-orchestrated architecture?
+    - How do you handle agent state between calls?
+    - What are the tradeoffs of stateless vs stateful agents?
+  - question: How do you handle agent failure in your pipeline?
+    category: technical_portfolio
+    likelihood: high
+    time_budget_minutes: 3-5 min
+    answer_structure: 'Each agent raises a typed exception (e.g. JobAnalystError, FitScorersError). Every agent has a status field: ok / partial / rejected. Partial means something was found but coverage
+      is thin — downstream agents still run with degraded input. Rejected means a hard dependency was missing — orchestrator catches the exception and stops that branch gracefully. The pipeline never silently
+      fails — every gap is flagged in warnings fields.'
+    anticipated_followups:
+    - How do you distinguish a recoverable failure from a fatal one?
+    - What does the orchestrator do when the Company Researcher fails?
+    - How do you surface failures to the user without overwhelming them?
+  - question: What is your eval approach for the agents?
+    category: technical_portfolio
+    likelihood: high
+    time_budget_minutes: 5-8 min
+    answer_structure: 'Two eval layers: (1) Deterministic checks — the cardinal sin validators. Job Analyst: parse_warnings catch JD ambiguity. Fit Scorer: arithmetic is all code. Resume Strategist: post-generation
+      validator checks every number against source. (2) End-to-end quality checks — run the pipeline on 5-10 real JDs and manually evaluate: does the prep pack actually help in a mock interview? Does the
+      fit score match my human judgment? Does the resume strategist catch gaps? Evals are designed after a real end-to-end run — not written blind.'
+    anticipated_followups:
+    - How do you measure the quality of the Interview Prep Coach specifically?
+    - What does a passing eval look like for the Fit Scorer?
+    - How would you automate these evals at scale?
+  - question: How do you prevent hallucination across the agents?
+    category: technical_portfolio
+    likelihood: high
+    time_budget_minutes: 3-5 min
+    answer_structure: Three-layer strategy mirroring what we built at MyTravelWallet. 1. LLM boundary design — agents with cardinal sins (numbers, company facts, candidate experience) never trust LLM for
+      those facts. Code owns math. 2. Source grounding — Resume Strategist only rewrites from profile.yaml entries, source field is mandatory. Company Researcher only states what has a source URL. 3. Post-generation
+      validation — numeric validator in Resume Strategist checks every rewritten number against its cited source. Same principle as production RAG guardrails.
+    anticipated_followups:
+    - What hallucination failure mode are you most worried about that you haven't solved?
+    - How do you validate the Company Researcher isn't using training data?
+    - How does this compare to your approach at MyTravelWallet?
+  - question: What would you do differently if you rebuilt this from scratch?
+    category: technical_portfolio
+    likelihood: likely
+    time_budget_minutes: 3-5 min
+    answer_structure: 'Three things: (1) Named story IDs from day one instead of positional indices — index drift was a real bug I caught late. (2) Split knowledge_base.yaml into smaller files earlier —
+      it grew to 25K+ tokens and the context builder has to filter aggressively on every run. (3) Design evals before shipping agents, not after — I specced the agents thoroughly but the eval harness is
+      still pending. The behavioral spec process (interview-first before code) is the one thing I''d keep exactly.'
+    anticipated_followups:
+    - What was the hardest agent to spec?
+    - How long did it take to build the full crew?
+    - What PM skill transferred most directly to building an agentic system?
+  pm_judgment_questions:
+  - question: Why did you build this for yourself vs using an existing tool like Teal or Rezi?
+    category: technical_portfolio
+    likelihood: high
+    time_budget_minutes: 2-3 min
+    answer_structure: Existing tools do generic resume rewriting without grounding — they invent metrics. They can't map a JD signal to my specific story about deferring agentic v2. They don't know that
+      MyTravelWallet's deterministic boundary is the exact answer to "how do you handle hallucination risk in financial products?" The differentiation is provability — every claim traces to something real
+      I did. That's a PM problem, not a writing problem. So I built the PM solution.
+    anticipated_followups:
+    - How would you productize this for other PMs?
+    - What would be your pricing model?
+    - What is the biggest technical risk if you scaled this to 1000 users?
+  - question: What was your decision to scope to 7 agents vs more or fewer?
+    category: technical_portfolio
+    likelihood: likely
+    time_budget_minutes: 3-5 min
+    answer_structure: '7 agents = 7 distinct responsibilities that don''t overlap. The forcing question was: can each agent be replaced independently without changing the others? Yes — swap SerpAPI for
+      a different search tool in Company Researcher, Job Analyst still works the same. Scope creep risk: Interview Prep Coach started as a question generator and grew to include technical routing, executive
+      prep, and follow-up questions. Managed it by speccing before building — the behavioral spec interview process caught scope expansion before it became code complexity.'
+    anticipated_followups: []
